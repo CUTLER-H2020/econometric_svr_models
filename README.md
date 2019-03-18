@@ -9,11 +9,11 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 - Ubuntu Server LTS (16.04) (used in developement)
-- or a alternative linux based distro
+- or a alternative debian based distro
 
 ### Installing
 
-####1. Manual
+#### 1. Manual
 
 1.a. Install Apache2 and enable cgi mod
 ```
@@ -60,7 +60,7 @@ Paste the text within the file
 ```
 
 
-####2. Automatically
+#### 2. Automatically
 
 Run setup.sh on project's directory
 ```
