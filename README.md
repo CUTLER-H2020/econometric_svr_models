@@ -64,5 +64,5 @@ Paste the cronjob within the file
 
 Run setup.sh on project's directory
 ```
-./setup.sh
+./setup.sh    -> NOT YET COMPLETED
 ```
