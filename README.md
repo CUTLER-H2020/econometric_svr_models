@@ -54,7 +54,7 @@ sudo mv economics_vaw /var/www/html/economics
 sudo crontab -e
 ```
 
-Paste the text within the file
+Paste the cronjob within the file
 ```
 0 0 * * * /home/user/rm_CUTLER_tmp.sh >/dev/null 2>&1
 ```
