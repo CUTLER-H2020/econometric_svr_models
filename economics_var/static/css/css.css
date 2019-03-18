@@ -1,0 +1,77 @@
+#loading {
+	padding-top: 15px;
+	display: none;
+	cursor: wait;
+}
+
+.red-light {
+	color: #FF9999; /*80%*/
+}
+
+.red {
+	color: #FF0000; /*50%*/
+}
+
+.red-dark {
+	color: #660000; /*20%*/
+}
+
+.blue-light {
+	color: #9999FF; /*80%*/
+}
+
+.blue {
+	color: #0000FF; /*50%*/
+}
+
+.blue-dark {
+	color: #000066; /*20%*/
+}
+
+.green-light {
+	color: #99FF99; /*80%*/
+}
+
+.green {
+	color: #00FF00; /*50%*/
+}
+
+.green-dark {
+	color: #006600; /*20%*/
+}
+
+.grey {
+	color: grey;
+}
+
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { 
+	display: none;  
+}
+
+.js #loader { 
+	display: block; 
+	position: absolute; 
+	left: 100px; 
+	top: 0; 
+}
+
+.holds-the-iframe {
+	background: url(../../static/images/page-loader.gif) center no-repeat #fff;
+}	
+
+.city_image {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.list-group-item.active-green,
+.list-group-item.active-green:hover,
+.list-group-item.active-green:focus {
+	z-index: 2;
+	  color: #fff;
+	  background-color: #5cb85c;
+	  border-color: #5cb85c; 
+}

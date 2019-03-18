@@ -1,0 +1,40 @@
+<!--User form -->
+<div class="col-4 col-xl-4 col-lg-4">
+	<h5 class="list-group-item active-green"><strong>CUTLER forecast model</strong></h5>
+	<br>    
+	<p>Based on the selected city, the CUTLER forecast model provides estimations on the future realizations of sectoral revenues for the new parking system in Thessaloniki and future realizations of revenues and the expected number of visitors for Camden Fort Meagher in Cork.</p>
+	<br>
+	<form id="user_input" name="user_input" action="/cgi-bin/economics/model_svr.py" enctype="multipart/form-data" method="POST" onsubmit="loading()">
+		<div class="form-group">
+			<label for="srv_towns">Please select city:</label>      
+			<select id="svr_towns" name="svr_towns" class="form-control" required>
+				<option selected value="base">City</option>
+				<option value="cork">Cork</option>
+				<option value="thessaloniki">Thessaloniki</option>
+			</select>
+		</div>
+
+		<p id="svr_scenario-text"></p>
+		<div id="dynamic_elements"></div>
+ 
+		<div class="row" id="loading">
+			<div class="col-12 col-xl-12 col-lg-12">
+				<img src="/economics/static/images/ajax-loader.gif" alt="Loading...">
+				<p>Running model, please do not refresh your browser</p>
+			</div>
+		</div>
+
+		<button id="submit_form" name="submit_form" value="Submit" type="submit" class="btn btn-success" onclick="loading();"><i class="fa fa-cogs"></i> Run the model</button>
+		<button id="reset" name="reset" type="reset" class="btn btn-secondary" onclick="reset_dynamics();"><i class="fa fa-undo"></i> Reset</button>
+		<br>
+	</form>
+
+	<br>
+    
+	<div class="row">
+		<div class="col-12 col-xl-12 col-lg-12">
+			<img id="svr_city_image" class="city_image">
+		</div>
+	</div>
+	<br>
+</div>

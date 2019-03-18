@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>CUTLER - Econometric Model</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/economics/static/css/css.css">
+
+<script>
+$("#towns").on('change', function() {
+var key = $dropdown.val();
+alert(key);
+alert($("#towns", window.parent.document).val())
+//    alert($("#ModuleDropDown", window.parent.document).val())
+})
+</script>
+</head>
+
+<body>
+
+<!-- Econometric model iframe-->
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe src="/cgi-bin/economics/model.py" style="border: none;" height="100%" width="100%"></iframe>
+</div>
+
+
+</body>
+</html>

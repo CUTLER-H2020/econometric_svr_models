@@ -1,0 +1,8 @@
+Your 'revenue' file should not exceed the dimensions in brackets (50 columns/sectors x 1000 rows/revenues) - for decimal number seperator use . - when you are done remove this line
+36,45
+70.15,34.2
+930.4,234.1
+1846,122
+-442,234
+1922.4,-23
+981,2323.3

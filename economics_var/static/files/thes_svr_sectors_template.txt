@@ -1,0 +1,3 @@
+Your 'sectors' file should not exceed the dimensions in brackets (1 columns x 50 rows/sectors) - use CAPITALS - the number of sections should aggree with the number of columns in "revenue" file - when you are done remove this line
+SECTION 1
+SECTION 2
