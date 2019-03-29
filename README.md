@@ -28,6 +28,8 @@ sudo apt-get install python
 sudo apt-get install python-pandas
 sudo apt-get install python-xlrd
 sudo apt-get install python-openpyxl
+sudo pip install kafka
+sudo pip install kafka-python
 ```
 
 1.c. Download/Install MATLAB R2018a Runtime (to run matlab exe)
