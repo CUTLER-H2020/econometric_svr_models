@@ -11,6 +11,14 @@ These instructions will get you a copy of the project up and running on your loc
 - Ubuntu Server LTS (16.04) (used in developement)
 - or a alternative debian based distro
 
+- Apache KAFKA - topics created:
+```
+DATA_ALL_ECO_ECONOMETRIC_USERINPUT
+ANLZ_ALL_ECO_ECONOMETRIC_USERINPUT
+DATA_ALL_ECO_SVR_USERINPUT
+ANLZ_ALL_ECO_SVR_USERINPUT
+```
+
 ### Installing
 
 #### 1. Manual
