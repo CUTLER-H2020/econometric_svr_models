@@ -137,6 +137,7 @@ def user_input_consumer_SVR(userID, default_files_counter, town):
             import subprocess
             subprocess.check_call(['matlab_scripts/run_matlab_script_svr.sh', town, str(userID)]) #town - selected town, userID 9digit unique session ID
             #MAGIC ENDS
+            kafkasendmessage(topic_to_produce, userID, "Session with key: " + str(userID) + " is ready - results can be found at /tmp directory")
 
         return True
     else:
