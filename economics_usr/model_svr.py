@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
 Written by Karypidis Paris Alexandros
 Democritus University of Thrace (DUTH)
@@ -6,8 +7,6 @@ Python 3.5
 
 Desc: The model_svr.py file handles the user input for DUTH's SVR analysis
 """
-
-#!/usr/bin/python
 
 # Import modules for CGI handling 
 import cgi, cgitb; cgitb.enable()
