@@ -8,6 +8,7 @@ Python 3.5
 Desc: The model_svr.py file handles the user input for DUTH's SVR analysis
 """
 
+
 # Import modules for CGI handling 
 import cgi, cgitb; cgitb.enable()
 import time, os
@@ -15,7 +16,7 @@ import pandas as pd
 #from functions import check_input, create_input, print_output, print_$
 from functions_svr import *
 from parameters import parameters
-from kafka_functions import user_input_producer_SVR, user_input_consumer_SVR
+from kafka_functions import user_input_producer_SVR, user_input_consumer_SVR, consume_message
 
 
 #Print header
@@ -76,7 +77,28 @@ if "submit_form" in form:
             # kafka_functions.py - send a message that a new user up
             user_input_producer_SVR(userID)
             if user_input_consumer_SVR(userID, default_files_counter, town):
-                print_output_SVR(userID, town)
+                result_pandas = print_output_SVR(userID, town)
+                # write data to elastic search index - if update_ui parameter exists
+                if form.getvalue('update_ui') == "true":
+                    print("[+] Updating UI<br>")
+                    if town == "cork" and consume_message(userID, "ANLZ_ALL_ECO_SVR_USERINPUT"):
+                        from elasticsearch_functions import *
+                        # read the output file
+                        results = {}
+                        for index, row in result_pandas.iterrows():
+                            if index == 0:
+                                results[0] = {"Working Period of the Fort": "1-252 days", "Visitors": row[0], "Revenue": row[1]}
+                            if index == 1:
+                                results[1] = {"Working Period of the Fort": "253-504 days", "Visitors": row[0], "Revenue": row[1]}
+                        '''
+                        for k, v in results.items():
+                            print(v)
+                        '''
+                        # add also Draxis index
+                        send_to_elasticsearch('cork_svr_forecast_data', results, '_doc')
+                        send_to_elasticsearch('cork_integr_svr', results, '_doc')
+
+
     else:
         print "<div class='alert alert-danger'><a href='#' class='close' data-dismiss='alert'>&times;</a><strong>Error:</strong> There was a problem uploading your files, please try again later</div>"
     print "</div>"

@@ -168,3 +168,4 @@ def print_output_SVR(userID, town):
             concatenated_df.index += 1
             print concatenated_df.to_html(index=True, classes=['table_svr_thess', 'table', 'table-bordered', 'table-hover'])
 
+    return concatenated_df
