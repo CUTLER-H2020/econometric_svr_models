@@ -38,6 +38,7 @@ sudo apt-get install python-xlrd
 sudo apt-get install python-openpyxl
 sudo pip install kafka
 sudo pip install kafka-python
+sudo pip install elasticsearch
 ```
 
 1.c. Download/Install MATLAB R2018a Runtime (to run matlab exe)
