@@ -21,8 +21,6 @@ ANLZ_ALL_ECO_SVR_USERINPUT
 
 ### Installing
 
-#### 1. Manual
-
 1.a. Install Apache2 and enable cgi mod
 ```
 sudo apt-get install apache2
@@ -68,12 +66,4 @@ sudo crontab -e
 Paste the cronjob within the file
 ```
 0 0 * * * /home/user/rm_CUTLER_tmp.sh >/dev/null 2>&1
-```
-
-
-#### 2. Automatically
-
-Run setup.sh on project's directory
-```
-./setup.sh    -> NOT YET COMPLETED
 ```
