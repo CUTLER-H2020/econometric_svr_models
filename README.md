@@ -1,8 +1,9 @@
-# DUTH's econometric/SVR dashboard
+# DUTH's econometric/SVR web tool
 
-DUTH's custom econometric and SVR model dashboards
+DUTH's economic web tool allows simulating illustrative policy interventions. It gives users the opportunity to assess whether a policy intervention has a positive impact on the city's economy. Results are also disentangled by production sector. More information can be found in Deliverable D4.2 - Visualization widget for presenting insights about the economic activity in spatio-temporal terms (https://zenodo.org/record/3385986)
 
-## Getting Started
+
+## Technical Information
 
 These instructions will get you a copy of the project up and running on your local machine for testing purposes. See deployment for notes on how to deploy the project on a live system.
 
