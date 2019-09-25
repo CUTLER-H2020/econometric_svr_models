@@ -7,6 +7,7 @@ The user can use the select list in order to choose a city for the analysis, the
 Pilot city scenarios:
 
 | Pilot city  | Description |
+| ---- | ----------- |
 | Antalya  | TBC |
 | Antwerp  | Floods affect economic activity through disruption of the industry production (manufacturing sector) or through disruption of harbor companies’ activities as Antwerp’s harbor is one of Europe’s largest harbor. |
 | Cork  | The future development of Camden Fort Meagher as a tourism destination may increase tourism spending in the area. |
