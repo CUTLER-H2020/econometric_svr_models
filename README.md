@@ -2,6 +2,16 @@
 
 DUTH's economic web tool allows simulating illustrative policy interventions. It gives users the opportunity to assess whether a policy intervention has a positive impact on the city's economy. Results are also disentangled by production sector. More information can be found in Deliverable D4.2 - Visualization widget for presenting insights about the economic activity in spatio-temporal terms (https://zenodo.org/record/3385986)
 
+The user can use the select list in order to choose a city for the analysis, then select a economic scenario and set a value for the simulation. After the user press the "Run the model" button, the econometric analysis model will present the results in a array. In the array the user can be informed whether the policy intervention she/he chose has a positive impact on the city's economy or not. The results are also presented grouped by production sectors (e.g. Regional Employment, Regional Gross Domestic Product etc.).
+
+Pilot city scenarios:
+
+| Pilot city  | Description |
+| Antalya  | TBC |
+| Antwerp  | Floods affect economic activity through disruption of the industry production (manufacturing sector) or through disruption of harbor companies’ activities as Antwerp’s harbor is one of Europe’s largest harbor. |
+| Cork  | The future development of Camden Fort Meagher as a tourism destination may increase tourism spending in the area. |
+| Thessaloniki  | The new parking system in Thessaloniki eases the proximity to the city center where most shops and services are located. This may increase the number of visitors coming from nearby cities, which in turn may increase retail sales. The new parking system also generates increased revenues which may invested by the municipality to improve city’s infrastructures (construction). |
+
 
 ## Technical Information
 
@@ -14,10 +24,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 - Apache KAFKA - topics created:
 ```
-DATA_ALL_ECO_ECONOMETRIC_USERINPUT
-ANLZ_ALL_ECO_ECONOMETRIC_USERINPUT
-DATA_ALL_ECO_SVR_USERINPUT
-ANLZ_ALL_ECO_SVR_USERINPUT
+ALL_ECO_ECONOMETRIC_USERINPUT_ONCALL
+ALL_ECO_ECONOMETRIC_RESULTS_ONCALL
+ALL_ECO_SVR_USERINPUT_ONCALL
+ALL_ECO_SVR_RESULTS_ONCALL
 ```
 
 ### Installing
