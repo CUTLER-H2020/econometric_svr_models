@@ -18,6 +18,12 @@ Pilot city scenarios:
 
 These instructions will get you a copy of the project up and running on your local machine for testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+#### Description of the folders:
+
+* [economic_usr](economics_usr/): contains the python cgi service including all the econometric models (in MATLAB executable format). This folder should be copied in the "/usr/lib/economics" folder in the local machine. (see "Installing" section for more)
+* [economic_var](economic_var/): contains all the necessary visualizations for the user dashboard (css/javascript libraries, econometric scenarios on json format). This folder should be copied in the "/var/www/html/economics" folder in the local machine. (see "Installing" section for more)
+
+
 ### Prerequisites
 
 - Ubuntu Server LTS (16.04) (used in developement)
